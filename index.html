@@ -12,14 +12,16 @@
 <body>
 
   <div class="card" data-state="#about">
-    <div class="card-header">
+    <div class="card-header" data-state="">
       <div class="card-cover"></div>
-      <img class="card-avatar"
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQEsgP6vhI6rDQ/profile-displayphoto-shrink_800_800/0/1646083116248?e=1653523200&v=beta&t=jDphF3EFb5KzqyQKqqEaB0_yIPXsnuJ6awcrfNLZd3k"
-        alt="avatar" />
-
-      <h1 class="full-name">Joel Goroso</h1>
-      <h2 class="job-tittle">Frontend Developer</h2>
+      <div class="img" data-state=""><img class="card-avatar" data-state=""
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQEsgP6vhI6rDQ/profile-displayphoto-shrink_800_800/0/1646083116248?e=1653523200&v=beta&t=jDphF3EFb5KzqyQKqqEaB0_yIPXsnuJ6awcrfNLZd3k"
+          alt="avatar" />
+      </div>
+      <div class="name" data-state="">
+        <h1 class="full-name">Joel Goroso</h1>
+        <h2 class="job-tittle">FRONTEND DEV</h2>
+      </div>
     </div>
 
     <div class="card-main">
@@ -83,6 +85,11 @@
             <div class="card-item-desc">Proyecto integrador para la academia NUCBA. <span>HTML && CSS</span>
             </div>
           </div>
+          <div class="card-item">
+            <div class="card-item-title">Tienda Disney <span>NUCBA</span></div>
+            <div class="card-item-desc">Proyecto integrador para la academia NUCBA. <span>HTML && CSS</span>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -94,12 +101,17 @@
 
     <div class="card-section" id="contacto">
       <div class="card-content">
-        <div class="card-subtitle">CONTACTAME LOKITA</div>
+        <div class="card-subtitle">PROYECTOS REALIZADOS</div>
         <div class="card-timeline">
           <div class="card-item">
-            <div class="card-item-title">TELEFONO <span>Frontend Mentor</span></div>
-            <div class="card-item-desc">EMAIL <span>HTML &&
+            <div class="card-item-title">Qr code component <span>Frontend Mentor</span></div>
+            <div class="card-item-desc">Challenge de Frontend Mentor donde se realiza una tarjeta QR. <span>HTML &&
                 CSS</span>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-title">Tienda Disney <span>NUCBA</span></div>
+            <div class="card-item-desc">Proyecto integrador para la academia NUCBA. <span>HTML && CSS</span>
             </div>
           </div>
           <div class="card-item">
@@ -117,11 +129,10 @@
 
 
 
-
     <div class="card-buttons">
-      <button data-section="#about" class="is-active">ABOUT</button>
+      <button data-section="#about" class="about is-active">ABOUT</button>
       <button data-section="#proyectos">PROYECTOS</button>
-      <button data-section="#contacto">CONTACTO</button>
+      <button data-section="#contacto" class="contacto">CONTACTO</button>
     </div>
 
 
@@ -130,7 +141,7 @@
 
 
 
-    <script src="index.js"></script>
+    <script src=" index.js"></script>
 
 </body>
 
